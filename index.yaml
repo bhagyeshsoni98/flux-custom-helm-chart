@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  flux_chart:
+  flux-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-01-07T21:52:56.417704814+05:30"
+    created: "2023-01-07T22:25:27.997772445+05:30"
     description: A Helm chart for Flux Assignment
-    digest: f31f652cba02c57b5962435b5ef24bebbf7906bc86b0f0de9c943020f519174f
-    name: flux_chart
+    digest: 51e4c8e84934c7585cca093842228d49fc8edd86300acff210b207b4cb770105
+    name: flux-chart
     type: application
     urls:
-    - https://bhagyeshsoni98.github.io/flux-custom-helm-chart/flux_chart-0.1.0.tgz
+    - https://bhagyeshsoni98.github.io/flux-custom-helm-chart/flux-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-07T21:52:56.417481534+05:30"
+generated: "2023-01-07T22:25:27.997542447+05:30"
