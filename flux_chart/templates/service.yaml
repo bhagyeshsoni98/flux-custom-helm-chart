@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flux-static-site-service
+  name: flux-static-site-service
+spec:
+  ports:
+  - name: http
+    port: {{ .Values.service.port }}
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: flux-static-site
+  type: {{ .Values.service.type }}
+status:
+  loadBalancer: {}

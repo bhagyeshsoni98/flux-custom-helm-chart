@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: "bhagyesh19/static-site"
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "1.0.0"
+
+service:
+  type: ClusterIP
+  port: 80

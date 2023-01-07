@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flux-static-site
+  name: flux-static-site
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flux-static-site
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flux-static-site
+    spec:
+      containers:
+      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        name: static-site
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
